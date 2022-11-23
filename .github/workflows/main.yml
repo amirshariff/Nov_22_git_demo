@@ -4,9 +4,10 @@ name: Git Actions Demo
 on: [push]
 
 jobs: 
-  runs-on: ubuntu-latest
-  steps:
-  - run: echo "Hello World"
-  - run: touch test.txt
-  - run: ls -a
-  - run: pwd
+  demo-testing: 
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Hello World"
+    - run: touch test.txt
+    - run: ls -a
+    - run: pwd
